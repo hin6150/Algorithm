@@ -1,0 +1,12 @@
+import sys
+input = sys.stdin.readline
+
+arr = [0] * 30
+
+for i in range(28):
+    number = int(input())
+    arr[number - 1] = 1
+
+for i in range(30):
+    if arr[i] == 0:
+        print(i + 1)
